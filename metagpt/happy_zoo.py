@@ -50,7 +50,7 @@ class HappyZoo(BaseModel):
 		It's time to start a topic.
 		"""
 		self.happy_topic = happy_topic
-		self.environment.publish_message(Message(role="Visitor", content=happy_topic, cause_by=BossRequirement))
+		self.environment.publish_message(Message(role="Boss", content=happy_topic, cause_by=BossRequirement))
 	
 	def _save(self):
 		logger.info(self.json())

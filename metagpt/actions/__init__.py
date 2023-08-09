@@ -22,7 +22,7 @@ from metagpt.actions.write_code_review import WriteCodeReview
 from metagpt.actions.write_prd import WritePRD
 from metagpt.actions.write_prd_review import WritePRDReview
 from metagpt.actions.write_test import WriteTest
-
+from metagpt.actions.talk import Talk
 
 class ActionType(Enum):
     """All types of Actions, used for indexing."""
@@ -40,3 +40,4 @@ class ActionType(Enum):
     WRITE_TASKS = WriteTasks
     ASSIGN_TASKS = AssignTasks
     SEARCH_AND_SUMMARIZE = SearchAndSummarize
+    TALK = Talk
